@@ -7,7 +7,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 
 const Summery = () => {
   return (
@@ -18,7 +17,9 @@ const Summery = () => {
           <CardTitle className="text-4xl">$2,732</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="text-xs text-green-400">+33% from this week</div>
+          <div className="text-xs dark:text-green-400 text-green-600">
+            +33% from this week
+          </div>
         </CardContent>
       </Card>
       <Card x-chunk="dashboard-05-chunk-1">
@@ -27,7 +28,9 @@ const Summery = () => {
           <CardTitle className="text-4xl">629</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="text-xs text-red-400">-9.33% from this month</div>
+          <div className="text-xs dark:text-red-400 text-red-600">
+            -9.33% from this month
+          </div>
         </CardContent>
       </Card>
       <Card x-chunk="dashboard-05-chunk-1">
@@ -36,7 +39,9 @@ const Summery = () => {
           <CardTitle className="text-4xl">28.66%</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="text-xs text-green-400">+8% from this week</div>
+          <div className="text-xs dark:text-green-400 text-green-600">
+            +8% from this week
+          </div>
         </CardContent>
       </Card>
       <Card x-chunk="dashboard-05-chunk-1">
@@ -45,7 +50,9 @@ const Summery = () => {
           <CardTitle className="text-4xl">$142,914</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="text-xs text-green-400">+32.4% from this week</div>
+          <div className="text-xs dark:text-green-400 text-green-600">
+            +32.4% from this week
+          </div>
         </CardContent>
       </Card>
       <Card
@@ -57,7 +64,9 @@ const Summery = () => {
           <CardTitle className="text-4xl">34.64%</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="text-xs text-red-400">-12.42% from this month</div>
+          <div className="text-xs dark:text-red-400 text-red-600">
+            -12.42% from this month
+          </div>
         </CardContent>
       </Card>
     </div>

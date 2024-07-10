@@ -35,11 +35,9 @@ const chartData = [
 const chartConfig = {
   desktop: {
     label: "Desktop",
-    color: "hsl(var(--chart-1))",
   },
   mobile: {
     label: "Mobile",
-    color: "hsl(var(--chart-2))",
   },
 } satisfies ChartConfig;
 
@@ -61,6 +59,7 @@ export default function DataChart() {
               left: 12,
               right: 12,
             }}
+            height={200}
           >
             <CartesianGrid vertical={false} />
             <XAxis
