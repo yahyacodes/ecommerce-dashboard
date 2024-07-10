@@ -33,7 +33,7 @@ const Summery = () => {
       <Card x-chunk="dashboard-05-chunk-1">
         <CardHeader className="pb-2">
           <CardDescription>Repeat Purchase Rete</CardDescription>
-          <CardTitle className="text-4xl">29.66%</CardTitle>
+          <CardTitle className="text-4xl">28.66%</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="text-xs text-green-400">+8% from this week</div>
