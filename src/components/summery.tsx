@@ -11,46 +11,54 @@ import { Progress } from "@/components/ui/progress";
 
 const Summery = () => {
   return (
-    <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
-      <Card className="sm:col-span-2" x-chunk="dashboard-05-chunk-0">
-        <CardHeader className="pb-3">
-          <CardTitle>Your Orders</CardTitle>
-          <CardDescription className="max-w-lg text-balance leading-relaxed">
-            Introducing Our Dynamic Orders Dashboard for Seamless Management and
-            Insightful Analysis.
-          </CardDescription>
+    <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-5">
+      <Card x-chunk="dashboard-05-chunk-1">
+        <CardHeader className="pb-2">
+          <CardDescription>Subcom Revenue</CardDescription>
+          <CardTitle className="text-4xl">$2,732</CardTitle>
         </CardHeader>
-        <CardFooter>
-          <Button>Create New Order</Button>
-        </CardFooter>
+        <CardContent>
+          <div className="text-xs text-green-400">+33% from this week</div>
+        </CardContent>
       </Card>
       <Card x-chunk="dashboard-05-chunk-1">
         <CardHeader className="pb-2">
-          <CardDescription>This Week</CardDescription>
-          <CardTitle className="text-4xl">$1,329</CardTitle>
+          <CardDescription>New Customers</CardDescription>
+          <CardTitle className="text-4xl">629</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="text-xs text-muted-foreground">
-            +25% from last week
-          </div>
+          <div className="text-xs text-red-400">-9.33% from this month</div>
         </CardContent>
-        <CardFooter>
-          <Progress value={25} aria-label="25% increase" />
-        </CardFooter>
       </Card>
-      <Card x-chunk="dashboard-05-chunk-2">
+      <Card x-chunk="dashboard-05-chunk-1">
         <CardHeader className="pb-2">
-          <CardDescription>This Month</CardDescription>
-          <CardTitle className="text-4xl">$5,329</CardTitle>
+          <CardDescription>Repeat Purchase Rete</CardDescription>
+          <CardTitle className="text-4xl">29.66%</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="text-xs text-muted-foreground">
-            +10% from last month
-          </div>
+          <div className="text-xs text-green-400">+8% from this week</div>
         </CardContent>
-        <CardFooter>
-          <Progress value={12} aria-label="12% increase" />
-        </CardFooter>
+      </Card>
+      <Card x-chunk="dashboard-05-chunk-1">
+        <CardHeader className="pb-2">
+          <CardDescription>Average Order Value</CardDescription>
+          <CardTitle className="text-4xl">$142,914</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="text-xs text-green-400">+32.4% from this week</div>
+        </CardContent>
+      </Card>
+      <Card
+        x-chunk="dashboard-05-chunk-2"
+        className="md:col-span-2 xl:col-span-1"
+      >
+        <CardHeader className="pb-2">
+          <CardDescription>Conversion Rate</CardDescription>
+          <CardTitle className="text-4xl">34.64%</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="text-xs text-red-400">-12.42% from this month</div>
+        </CardContent>
       </Card>
     </div>
   );
