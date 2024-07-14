@@ -7,7 +7,7 @@ import RecentSales from "@/components/recent-sales";
 import Users from "@/components/users";
 import Notifications from "@/components/notifications";
 
-export default function Dashboard() {
+const Dashboard = () => {
   return (
     <div className="flex min-h-screen w-full flex-col bg-gray-100/10 dark:bg-zinc-900">
       <Sidebar />
@@ -32,4 +32,5 @@ export default function Dashboard() {
       </div>
     </div>
   );
-}
+};
+export default Dashboard;
