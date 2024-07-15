@@ -18,26 +18,26 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 const chartData = [
-  { month: "January", desktop: 186, mobile: 80 },
-  { month: "February", desktop: 200, mobile: 100 },
-  { month: "March", desktop: 237, mobile: 120 },
-  { month: "April", desktop: 73, mobile: 190 },
-  { month: "May", desktop: 209, mobile: 130 },
-  { month: "June", desktop: 214, mobile: 140 },
-  { month: "July", desktop: 186, mobile: 80 },
-  { month: "August", desktop: 305, mobile: 200 },
-  { month: "September", desktop: 237, mobile: 120 },
-  { month: "October", desktop: 73, mobile: 190 },
-  { month: "November", desktop: 209, mobile: 130 },
-  { month: "December", desktop: 214, mobile: 140 },
+  { month: "January", Income: 186, Sales: 80 },
+  { month: "February", Income: 200, Sales: 100 },
+  { month: "March", Income: 237, Sales: 120 },
+  { month: "April", Income: 73, Sales: 190 },
+  { month: "May", Income: 209, Sales: 130 },
+  { month: "June", Income: 214, Sales: 140 },
+  { month: "July", Income: 186, Sales: 80 },
+  { month: "August", Income: 305, Sales: 200 },
+  { month: "September", Income: 237, Sales: 120 },
+  { month: "October", Income: 73, Sales: 190 },
+  { month: "November", Income: 209, Sales: 130 },
+  { month: "December", Income: 214, Sales: 140 },
 ];
 
 const chartConfig = {
-  desktop: {
-    label: "Desktop",
+  Income: {
+    label: "Income",
   },
-  mobile: {
-    label: "Mobile",
+  Sales: {
+    label: "Sales",
   },
 } satisfies ChartConfig;
 
@@ -45,9 +45,9 @@ export default function DataChart() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Area Chart - Stacked</CardTitle>
+        <CardTitle>Summary</CardTitle>
         <CardDescription>
-          Showing total visitors for the last 6 months
+          Showing total sales for the last 12 months
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -75,20 +75,20 @@ export default function DataChart() {
             />
             <Area
               className="fill-blue-300 stroke-blue-400"
-              dataKey="mobile"
+              dataKey="Sales"
               type="natural"
-              fill="var(--color-mobile)"
+              fill="var(--color-Sales)"
               fillOpacity={0.4}
-              stroke="var(--color-mobile)"
+              stroke="var(--color-Sales)"
               stackId="a"
             />
             <Area
               className="fill-blue-600 stroke-blue-500"
-              dataKey="desktop"
+              dataKey="Income"
               type="natural"
-              fill="var(--color-desktop)"
+              fill="var(--color-Income)"
               fillOpacity={0.4}
-              stroke="var(--color-desktop)"
+              stroke="var(--color-Income)"
               stackId="a"
             />
           </AreaChart>
